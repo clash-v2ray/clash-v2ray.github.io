@@ -310,19 +310,9 @@ DNS修改只能解决域名解析问题，若网站被IP封锁或深度检测拦
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 的多路复用功能有哪些优势？</h5></div>
+    <div class="panel-heading"><h5>WinXray PAC 模式如何提高访问速度和便利性？</h5></div>
     <div class="panel-body">
-        多路复用允许多个请求共享同一 QUIC 连接，减少握手次数和延迟。高并发情况下可以提升吞吐量和稳定性，特别适合短连接频繁请求的应用，如游戏或即时通讯。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray 如何通过节点测速自动切换最优线路？</h5></div>
-    <div class="panel-body">
-        WinXray 会定期检测节点延迟和丢包率，并结合策略组自动选择最佳节点。保证网页浏览、视频播放和游戏流量走低延迟节点，提高访问速度和网络稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何优化 Clash DNS 解析速度？</h5></div>
-    <div class="panel-body">
-        可在配置文件中启用 fake-ip 模式或使用高质量的 DoH 服务（如 Cloudflare、AliDNS）。同时将 `fallback-filter.geoip` 设置为 true，避免国内域名被错误解析到境外，提高解析效率。<hr />    </div>
+        PAC 模式根据规则动态判断流量是否走代理，无需手动切换节点。适合国内外混合访问场景，提高网页和视频访问速度与稳定性，减少操作错误导致的访问失败。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Shadowrocket 的分流规则如何实现广告拦截？</h5></div>
@@ -330,14 +320,24 @@ DNS修改只能解决域名解析问题，若网站被IP封锁或深度检测拦
         通过配置规则，将广告域名或请求路径匹配到黑名单策略，使请求直接阻断或重定向到本地地址。这样用户浏览网页或使用应用时可自动屏蔽大部分广告内容。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray 如何通过节点测速自动切换最优线路？</h5></div>
+    <div class="panel-body">
+        WinXray 会定期检测节点延迟和丢包率，并结合策略组自动选择最佳节点。保证网页浏览、视频播放和游戏流量走低延迟节点，提高访问速度和网络稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hysteria2 的多路复用功能有哪些优势？</h5></div>
+    <div class="panel-body">
+        多路复用允许多个请求共享同一 QUIC 连接，减少握手次数和延迟。高并发情况下可以提升吞吐量和稳定性，特别适合短连接频繁请求的应用，如游戏或即时通讯。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Nekobox 如何设置分流规则？</h5></div>
     <div class="panel-body">
         Nekobox 提供图形化规则编辑界面，可基于 IP、域名、地区等条件创建分流规则。例如可设置国内直连、国外代理、特定网站走特定节点，操作直观。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray PAC 模式如何提高访问速度和便利性？</h5></div>
+    <div class="panel-heading"><h5>VMess AEAD 加密如何确保数据传输安全？</h5></div>
     <div class="panel-body">
-        PAC 模式根据规则动态判断流量是否走代理，无需手动切换节点。适合国内外混合访问场景，提高网页和视频访问速度与稳定性，减少操作错误导致的访问失败。<hr />    </div>
+        AEAD 加密可防止数据篡改、重放攻击和流量特征泄露。在高封锁环境中保证节点可用，提升数据安全和连接稳定性，降低被检测风险，确保长期安全访问体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>如何给 Clash 或 Sing-box 添加本地广告屏蔽规则？</h5></div>
@@ -345,9 +345,9 @@ DNS修改只能解决域名解析问题，若网站被IP封锁或深度检测拦
         可导入公共广告域名列表（如 ads、trackers）并将其指向 `REJECT` 或 `DIRECT`（根据需求）；还可以使用 rule-provider 自动更新广告规则，并结合 hosts 或 DNS 层面进行联合拦截以提升屏蔽效果。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Quantumult X 的“分流规则”如何管理？</h5></div>
+    <div class="panel-heading"><h5>如何优化 Clash DNS 解析速度？</h5></div>
     <div class="panel-body">
-        Quantumult X 使用策略组管理分流规则。用户可将规则文件导入应用，通过“policy group”定义不同流量走向，实现国内直连、国外代理、广告拦截等功能的自动分配。<hr />    </div>
+        可在配置文件中启用 fake-ip 模式或使用高质量的 DoH 服务（如 Cloudflare、AliDNS）。同时将 `fallback-filter.geoip` 设置为 true，避免国内域名被错误解析到境外，提高解析效率。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Clash.Meta 与原版 Clash 有何不同？</h5></div>
@@ -355,9 +355,9 @@ DNS修改只能解决域名解析问题，若网站被IP封锁或深度检测拦
         Clash.Meta 是社区优化版本，支持更多传输协议，如 Hysteria、TUIC、Reality 等。它还增强了 DNS 处理逻辑和脚本分流能力，适合追求极致速度和灵活规则配置的高级用户。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess AEAD 加密如何确保数据传输安全？</h5></div>
+    <div class="panel-heading"><h5>Quantumult X 的“分流规则”如何管理？</h5></div>
     <div class="panel-body">
-        AEAD 加密可防止数据篡改、重放攻击和流量特征泄露。在高封锁环境中保证节点可用，提升数据安全和连接稳定性，降低被检测风险，确保长期安全访问体验。    </div>
+        Quantumult X 使用策略组管理分流规则。用户可将规则文件导入应用，通过“policy group”定义不同流量走向，实现国内直连、国外代理、广告拦截等功能的自动分配。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -386,16 +386,16 @@ DNS修改只能解决域名解析问题，若网站被IP封锁或深度检测拦
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-10-8-node-share-links.htm" title="免费Clash V2ray - 10月8日20.9M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点节点订阅分享">免费Clash V2ray - 10月8日20.9M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-3-free-clash.htm" title="免费Clash V2ray - 10月3日22.9M/S|免费V2ray节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点节点订阅分享">免费Clash V2ray - 10月3日22.9M/S|免费V2ray节点/Singbox节点/SSR节点/Clash节点/Shadowrocket节点节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-25-node-share-links.htm" title="免费Clash V2ray - 10月25日23M/S|免费Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点节点订阅分享">免费Clash V2ray - 10月25日23M/S|免费Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-15-free-node-subscribe-links.htm" title="免费Clash V2ray - 10月15日23M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点节点订阅分享">免费Clash V2ray - 10月15日23M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-20-free-clash-subscribe.htm" title="免费Clash V2ray - 10月20日21.1M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点节点订阅分享">免费Clash V2ray - 10月20日21.1M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Shadowrocket节点节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-24-free-clash.htm" title="免费Clash V2ray - 10月24日19.9M/S|免费Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点节点订阅分享">免费Clash V2ray - 10月24日19.9M/S|免费Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-6-free-subscribe-node.htm" title="免费Clash V2ray - 10月6日21.9M/S|免费Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/SSR节点节点订阅分享">免费Clash V2ray - 10月6日21.9M/S|免费Shadowrocket节点/Singbox节点/Clash节点/V2ray节点/SSR节点节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-27-clash-v2ray-ss-ssr.htm" title="免费Clash V2ray - 10月27日18.3M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点节点订阅分享">免费Clash V2ray - 10月27日18.3M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点节点订阅分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-18-free-node-subscribe-links.htm" title="免费Clash V2ray - 10月18日20.8M/S|免费Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点节点订阅分享">免费Clash V2ray - 10月18日20.8M/S|免费Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-16-free-node-subscribe.htm" title="免费Clash V2ray - 10月16日20.5M/S|免费SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点节点订阅分享">免费Clash V2ray - 10月16日20.5M/S|免费SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点节点订阅分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-10-31-shadowrocket-node.htm" title="免费Clash V2ray - 10月31日18.6M/S|免费Singbox节点/V2ray节点/SSR节点/Shadowrocket节点/Clash节点节点订阅分享">免费Clash V2ray - 10月31日18.6M/S|免费Singbox节点/V2ray节点/SSR节点/Shadowrocket节点/Clash节点节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-13-free-clash.htm" title="免费Clash V2ray - 10月13日20.5M/S|免费V2ray节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点节点订阅分享">免费Clash V2ray - 10月13日20.5M/S|免费V2ray节点/SSR节点/Singbox节点/Clash节点/Shadowrocket节点节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-4-clash-node-daily-updates.htm" title="免费Clash V2ray - 10月4日18.7M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点节点订阅分享">免费Clash V2ray - 10月4日18.7M/S|免费V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-25-node-share-links.htm" title="免费Clash V2ray - 10月25日23M/S|免费Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点节点订阅分享">免费Clash V2ray - 10月25日23M/S|免费Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-14-clash-node-daily-updates.htm" title="免费Clash V2ray - 10月14日21.4M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Clash节点节点订阅分享">免费Clash V2ray - 10月14日21.4M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Clash节点节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-11-free-ssr-subscribe.htm" title="免费Clash V2ray - 10月11日20.1M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点节点订阅分享">免费Clash V2ray - 10月11日20.1M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Clash节点节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-17-free-high-speed-nodes.htm" title="免费Clash V2ray - 10月17日19.7M/S|免费SSR节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点节点订阅分享">免费Clash V2ray - 10月17日19.7M/S|免费SSR节点/Shadowrocket节点/Clash节点/Singbox节点/V2ray节点节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-22-free-ssr-node.htm" title="免费Clash V2ray - 10月22日18.2M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点节点订阅分享">免费Clash V2ray - 10月22日18.2M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点节点订阅分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-5-free-high-speed-nodes.htm" title="免费Clash V2ray - 11月5日21.2M/S|免费Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点节点订阅分享">免费Clash V2ray - 11月5日21.2M/S|免费Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点节点订阅分享</a></li>
                     </ul>
     </div>
 </div>
@@ -407,7 +407,7 @@ DNS修改只能解决域名解析问题，若网站被IP封锁或深度检测拦
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">2</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
+                <h4><span class="badge" style="float: right;">8</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2025-10/" title="2025-10 归档">2025-10</a></h4>
