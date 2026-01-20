@@ -1,4 +1,4 @@
-# 免费Clash V2ray - 1月12日18.2M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Clash节点节点订阅分享  更新时间 2026-01-12 09:29:33
+# 免费Clash V2ray - 1月20日22.8M/S|免费Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点节点订阅分享  更新时间 2026-01-20 07:45:47
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://clash-v2ray.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://clash-v2ray.github.io/uploads/2026/01/0-20260112.yaml
-- https://clash-v2ray.github.io/uploads/2026/01/1-20260112.yaml
-- https://clash-v2ray.github.io/uploads/2026/01/2-20260112.yaml
-- https://clash-v2ray.github.io/uploads/2026/01/3-20260112.yaml
-- https://clash-v2ray.github.io/uploads/2026/01/4-20260112.yaml
+- https://clash-v2ray.github.io/uploads/2026/01/0-20260120.yaml
+- https://clash-v2ray.github.io/uploads/2026/01/1-20260120.yaml
+- https://clash-v2ray.github.io/uploads/2026/01/2-20260120.yaml
+- https://clash-v2ray.github.io/uploads/2026/01/3-20260120.yaml
+- https://clash-v2ray.github.io/uploads/2026/01/4-20260120.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://clash-v2ray.github.io/uploads/2026/01/0-20260112.txt
-- https://clash-v2ray.github.io/uploads/2026/01/1-20260112.txt
-- https://clash-v2ray.github.io/uploads/2026/01/2-20260112.txt
-- https://clash-v2ray.github.io/uploads/2026/01/3-20260112.txt
-- https://clash-v2ray.github.io/uploads/2026/01/4-20260112.txt
+- https://clash-v2ray.github.io/uploads/2026/01/0-20260120.txt
+- https://clash-v2ray.github.io/uploads/2026/01/1-20260120.txt
+- https://clash-v2ray.github.io/uploads/2026/01/2-20260120.txt
+- https://clash-v2ray.github.io/uploads/2026/01/3-20260120.txt
+- https://clash-v2ray.github.io/uploads/2026/01/4-20260120.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://clash-v2ray.github.io/uploads/2026/01/20260112.json
+- https://clash-v2ray.github.io/uploads/2026/01/20260120.json
 
 ## 更多Clash节点订阅 ：
 
